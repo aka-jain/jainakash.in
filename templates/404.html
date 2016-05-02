@@ -1,0 +1,94 @@
+{% load staticfiles %}
+
+<!doctype html>
+
+<html>
+
+<head>
+    <title> 
+        Akash Jain</title>
+        <link rel="icon" type="image/x-icon" href="{% static 'images/favicons.png' %}">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+@font-face {
+font-family:geo;
+src:url("{% static 'fonts/Geometos.ttf' %}")
+}
+@font-face {
+font-family:mons-lig;
+src:url("{% static 'fonts/Montserrat-Light.otf' %}")
+}
+body{
+margin: 0;
+padding: 0;
+background:url("{% static 'images/cartoon.gif' %}") no-repeat right center fixed;
+background-size:cover;
+font-family: 'mons-lig';
+color:#4d4d4d;
+overflow: hidden;
+
+
+}
+h2{
+    font-family: 'geo';
+    color:#9d9d9d;
+}
+.out{
+    display: block;
+    width: 50%;
+    height: 100vh;
+  
+    margin: 12% 5%;
+    color: #9d9d9d
+}
+a{
+       text-decoration: none;
+    color: #D84D4D;
+}
+
+.check-pad{
+    padding: 0;
+
+}
+@media (max-width: 440px) {
+    h2,h3{
+        color: #f9f9f9;
+
+    }
+   .out{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    color: #f9f9f9;
+    text-align: center;
+    padding-top: 80px; 
+    position: relative;
+
+    margin: 0;
+
+    }
+    a{
+        color: yellow;
+    }
+
+.check-pad{
+    padding: 20px;
+    
+}
+}
+
+</style>
+
+<body>
+
+
+    <div class="out">
+       <div class="check-pad"><h2>404 Page not found!</h2>
+        <h3>It seems that the page you are searching is not avalable.<br>
+       May be this can help you <a href="http://www.jainakash.in">www.jainakash.in</a>!</h3></div>
+    </div>
+
+<!-- <script src="js/wow.min.js" ></script> -->
+</body>
+</html>
