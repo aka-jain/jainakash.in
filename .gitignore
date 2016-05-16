@@ -1,0 +1,7 @@
+*.pyc
+db.sqlite3
+venv1/
+env/
+mypf/
+staticfiles/
+__pycache__

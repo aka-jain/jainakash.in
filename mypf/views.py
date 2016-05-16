@@ -35,3 +35,56 @@ class Mobile(View):
 		return render(request, "mobile.html")
 
 
+class Projects(View):
+	def get(self, request):
+		return render(request, "projects.html")
+
+class Infoconnect(View):
+	def get(self, request):
+		return render(request, "infoconect.html")
+
+class Zealicon(View):
+	def get(self, request):
+		return render(request, "zealicon.html")
+
+class Recoursera(View):
+	def get(self, request):
+		return render(request, "recoursera.html")
+
+class Dataanalysis(View):
+	def get(self, request):
+		return render(request, "data-analysis.html")
+
+class Founch(View):
+	def get(self, request):
+		return render(request, "founch.html")
+
+class Getmeashop(View):
+	def get(self, request):
+		return render(request, "getmeashop.html")
+
+class Yemmymaids(View):
+	def get(self, request):
+		return render(request, "yemmymaids.html")
+
+class Zeometree(View):
+	def get(self, request):
+		return render(request, "zeometree.html")
+
+class Messageup(View):
+	def get(self, request):
+		return render(request, "messageup.html")
+
+class Portfolio(View):
+	def get(self, request):
+		return render(request, "portfolio.html")
+
+class Prepmycar(View):
+	def get(self, request):
+		return render(request, "prepmycar.html")
+
+class Ecommerce(View):
+	def get(self, request):
+		return render(request, "ecommerce.html")
+
+

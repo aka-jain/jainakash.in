@@ -1,4 +1,4 @@
-{% load staticfiles %}
+<!-- {% load static %} -->
 
 <!doctype html>
 <html>
@@ -232,13 +232,13 @@
 <ul>
 <li class="inner-1 in">
 <div class="zoom zoom1"><img src="{% static 'images/zoom.png' %}"></div>
-<div class="indiv founch"><img src="{% static 'images/founch-logo.png' %}"></div>
+<div class="indiv founch"><a href="{% url "projects" %}"><img src="{% static 'images/founch-logo.png' %}"></a></div>
 
 </li>
 
 <li class="inner-3 in">
 <div class="zoom zoom3"><img src="{% static 'images/zoom.png' %}"></div>
-<div class="indiv gmas"><img src="{% static 'images/gmas-logo.png' %}"></div>
+<div class="indiv gmas"><a href="{% url "getmeashop" %}"><img src="{% static 'images/gmas-logo.png' %}"></a></div>
 </li>
 <li class="inner-7 in">
 <div class="zoom zoom4"><img src="{% static 'images/zoom.png' %}"></div>
@@ -876,126 +876,7 @@ Please fill all the entries</div><br>
 
 		<!-- projects pages======================================= -->
 
-		<!-- founch-project=========================== -->
-
-		<div class="f-outer all-scroll ">
-			<div class="f-cross">
-				<i class="fa fa-times fa-2x">
-</i>
-			</div>
-			<div class="f-top">
-				<i class="fa fa-chevron-up fa-1x">
-</i>
-			</div>
-
-			<div class="f-inner">
-
-				<!-- banner====== -->
-				<div class="f-over">
-				</div>
-				<div class="f-banner">
-					<div class="fo-logo col-xs-12 wow fadeInUp ">
-						<img src="{% static 'images/logo-f.png' %}">
-					</div>
-					<div class="fo-head col-xs-12 wow fadeInUp" data-wow-delay="0.2s">
-						<h3>Founch</h3>
-						<h4>Bringing together all information, at one place!</h4>
-					</div>
-					<div class="fo-link col-xs-12 wow fadeInUp" data-wow-delay="0.4s">
-						<a href="https://www.founch.com" target="_blank">www.founch.com</a>
-					</div>
-
-				</div>
-				<!-- intro======== -->
-				<div class="intro col-xs-12 col-md-10 col-md-offset-1">
-					<div class=" col-xs-12 ">
-						<h3>Introduction</h3>
-					</div>
-					<div class="intro-content">
-						Founch is an Advance form of wikipedia initially launched for Hollywood celebrities where only interested and important information is shown up at a single place. I have worked as a frontend intern in this organization and handle some pages of founch website!
-					</div>
-				</div>
-
-				<!-- color============ -->
-
-				<div class="color col-xs-12 col-md-10 col-md-offset-1">
-					<div class="col-xs-12 ">
-						<h3>Color Pallete</h3>
-					</div>
-					<div class="color-img remove-shadow ">
-						<img src="{% static 'images/color-theme.png' %}">
-					</div>
-				</div>
-
-				<!-- product-video -->
-				<!-- <div class="color col-xs-12 col-md-10 col-md-offset-1">
-<div class="col-xs-12 ">
-<h3>Product Video</h3>
-</div>
-<div class="vid-over"><img src="{%static 'images/yt-icon.png'%}" class="yt-icon"><img src="{% static 'images/vid-over.jpg'%}"></div> -->
-				<!-- <div id="player">
-<iframe  src="https://www.youtube.com/embed/vbE222udSPM" frameborder="0" allowfullscreen></iframe>
-</div> -->
-				<!-- </div> -->
-
-				<!-- founch-index========= -->
-
-				<div class="f-index col-xs-12 col-md-10 col-md-offset-1">
-					<div class="col-xs-12 ">
-						<h3>Landing Page</h3>
-					</div>
-					<div class="color-img  ">
-						<img src="{% static 'images/founch-index.jpg' %}">
-					</div>
-				</div>
-
-				<!-- founch-search -->
-				<div class="f-index col-xs-12 col-md-10 col-md-offset-1">
-					<div class="col-xs-12 ">
-						<h3>Search Page</h3>
-					</div>
-					<div class="color-img  ">
-						<img src="{% static 'images/search.jpg' %}">
-					</div>
-				</div>
-
-				<!-- mobile-pages -->
-				<div class="f-mob col-xs-12 col-md-10 col-md-offset-1">
-					<div class="col-xs-12 ">
-						<h3>Responsive Pages</h3>
-					</div>
-					<div class="row">
-						<div class="color-img f-mob-img col-xs-12 col-sm-6  ">
-							<img src="{% static 'images/index-mob.jpg' %}">
-						</div>
-						<div class="color-img f-mob-img col-xs-12 col-sm-6 " data-wow-delay="0s">
-							<img src="{% static 'images/mob-search.jpg' %}">
-						</div>
-					</div>
-				</div>
-
-
-				<div class="f-last col-xs-12 col-md-10 col-md-offset-1">
-					<div class="row">
-						<div class=" col-xs-4">
-							<div class="f-line">
-							</div>
-						</div>
-						<div class="f-end col-xs-4">
-							<h4>Thats all folks!</h4>
-						</div>
-						<div class=" col-xs-4">
-							<div class="f-line">
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-
-
-
+	
 
 		<!-- hitit-project=========================== -->
 
@@ -1727,7 +1608,7 @@ Please fill all the entries</div><br>
 	<!--scripts-->
 
 	<script type="text/javascript">
-		if (screen.width <= 640) {
+		if (screen.width <= 780) {
 			document.location = "mobile";
 		}
 	</script>
