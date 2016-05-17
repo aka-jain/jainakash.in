@@ -1,0 +1,107 @@
+{% load staticfiles %}
+
+
+
+<!doctype html>
+<html>
+
+<head>
+
+	<title>
+		Akash Jain
+	</title>
+	<link rel="icon" type="image/x-icon" href="{% static 'images/favicons.png' %}">
+
+	<meta name="Description" content="Hi I'm Akash Jain, a Frontend Developer with good design sense" />
+
+	<meta name="google-site-verification" content="fFXTiyapPQDg5omCYCwHDzRwfcIlkpWvuBjxwIV-Z-Y" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	
+	<link rel="stylesheet" href="{% static 'css/founch.css' %}">
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+</head>
+
+<body >
+
+<!-- messageup-project=========================== -->
+
+		<div class=" h-outer all-scroll">
+			<!-- <div class="f-cross">
+				<i class="fa fa-times fa-2x">
+</i>
+			</div> -->
+			<div class="h-top">
+				<i class="fa fa-chevron-up fa-1x">
+</i>
+			</div>
+
+			<div class="f-inner msg-inner">
+
+				<!--messageup.js-->
+
+
+				<div class="head">MessageUp.js</div>
+				<a class="left-a" href="https://github.com/aka-jain/MessageUp.js" target="_blank">github.com/aka-jain/MessageUp.js</a>
+
+				<div id="message-box"></div>
+				<p> MessageUp.js is just a 1KB Javascript library which runs with Jquery.
+					<br> If you want to change your text dynamically after some time then MessageUp.js will do it all for you.
+					<br> You can also customize speed, color and effects time of messages.
+					<br>
+					<br> Read documentation on GitHub.
+					<br>And if you want to contribute in this library then you are most welcome.
+				</p>
+
+				<div class="example">
+					It's very easy to apply.
+					<br>
+					<br> Step1- include message.js or message-min.js script after your ending body tag like:
+					<br> &#10094;script src="/path/messageup.js"&#10095;&#10094;/script&#10095; or &#10094;script src="/path/messageup-min.js"&#10095;&#10094;/script&#10095;
+					<br>
+					<br> Step2- initialize your own script just above your message.up script tags as
+					<br> &#10094;script&#10095;
+					<br> &nbsp;&nbsp;&nbsp;&nbsp; var msg=["Message 1", "Message 2", "Message 3", "Message 4", "Message 5" ]; <span class="light-msg">&nbsp;//define messages here </span>
+					<br> &nbsp;&nbsp;&nbsp;&nbsp; var color=["red", "green", "yellow", "green", "blue"]; <span class="light-msg">&nbsp;// define color here (optional)</span>
+					<br> &nbsp;&nbsp;&nbsp;&nbsp; var time=1500;<span class="light-msg"> &nbsp;// define time here (optional)</span>
+					<br> &nbsp;&nbsp;&nbsp;&nbsp; var speed="slow";<span class="light-msg"> &nbsp;// define speed here as slow or fast (optional) </span>
+					<br> &nbsp;&nbsp;&nbsp;&nbsp; var iteration="repeat"; <span class="light-msg">&nbsp;// define iteration type here as repeat or no-repeat (optional)</span>
+					<br> &#10094;/script&#10095;
+
+					<br>
+					<br> Step3- include an id to your div as message-box in HTML like:
+					<br> &#10094;div id="message-box"&#10095;&#10094;/div&#10095;
+					<br>
+					<br> Now you are ready to go :)
+				</div>
+
+				<div class="sign">By Akash Jain
+					<br>
+					<a href="http://www.jainakash.in" target="_blank">
+(www.jainakash.in)<br><br></a> Made with <i class="fa fa-heart"></i> while listening <i class="fa fa-music"></i></div>
+			</div>
+		</div>
+
+
+	
+
+
+	<script>
+
+	
+	$(".h-top").click(function(){
+	
+		$("body").animate({
+			'scrollTop':'0px'
+		},500)
+	})
+</script>
+
+</body>
+</html>

@@ -113,15 +113,38 @@
 	</div> 
 </div>
 <!-- founch-project=========================== -->
+
+
+<div class="loader" id="loader">
+			<div class="loader-logo load-effect wow fadeInUp">
+				<img src="{% static 'images/logo-loader.gif' %}"><br>
+				<h3>Loading...</h3>
+			</div>
+
+		</div>
 <div class="pro-content">
-		
+	
 
 </div>
 
+
 	<script src="//code.jquery.com/jquery-1.12.0.min.js" ></script>
 	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js" ></script>
+	<script>
+		// script for messageup
+		var msg = ["Hi!", "I'm Messageup.js", "Use me to...", "display your text", " change your text", "do cool things", ":)"]; //define messages
+
+		var color = ["#E53935", "#5E35B1", "#009688", "#AFB42B", "#37474F", "#EF6C00", "#558B2F"]; //define color corresponding to each message
+
+		var time = 1500; //define time for which message will display on screen (optional)
+
+		var speed = "slow"; // define speed of fade effect  (optional)
+
+		var iteration = "repeat"; //define iteration type  (optional)
+	</script>
+	<script src="{% static 'js/messageup-min.js' %}"></script>
 	<!-- redirect to mobile page -->
-	<script src="{% static 'js/wow.min.js' %}" ></script>
+	
 
 	 <script src="{% static 'js/projects-min.js' %}" ></script>
 

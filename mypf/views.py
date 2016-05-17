@@ -41,7 +41,7 @@ class Projects(View):
 
 class Infoconnect(View):
 	def get(self, request):
-		return render(request, "infoconect.html")
+		return render(request, "infoconnect.html")
 
 class Zealicon(View):
 	def get(self, request):

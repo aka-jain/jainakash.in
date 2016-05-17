@@ -10,6 +10,11 @@
     font-family: mons-lig;
     src: url(../fonts/Montserrat-Light.otf)
 }
+a:hover,
+a:active,
+a:focus{
+    text-decoration: none;
+}
 body{
     overflow-x: hidden ;
 }
@@ -25,7 +30,38 @@ body{
     border-radius: 20px;
     background-color: #E42B3C
 }
+.loader{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: #fff;
+    z-index: 2;
+    top: 0px;
 
+}
+.loader-logo{
+    display: inline-block;
+    position: absolute;
+    top: 220px;
+    margin: 0 auto;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+}
+.loader h3{
+    color: #4d4d4d;
+    font-family: 'Geo';
+    font-size: 1em;
+}
+.loader-logo img{
+    width: 80px;
+}
+.pro-content{
+    position: absolute;
+    z-index: 1px;
+    top: 160px;
+}
 /* arrows */
 
 .arrow{
@@ -46,12 +82,13 @@ body{
 }
 .leftar{
     left:20px;
-     opacity: 1;
+     opacity: 0.4;
+       cursor: default;
 }
 .rightar{
     right:20px;
-    opacity: 0.4;
-    cursor: default;
+    opacity: 1;
+  
    
 /*     float:right; */
 
@@ -62,8 +99,9 @@ body{
 .pro-slider{
     display: block;
     width: 100vw;
-    height: 140px;
-    z-index: 5;
+    height: 160px;
+    position: absolute;
+    z-index: 10;
     background: #0f0f0f;
 }
 .pro-slider .head1{
@@ -154,7 +192,11 @@ body{
 .pmc-outer,
 .po-outer,
 .ym-outer,
-.z-outer {
+.z-outer,
+.sc-outer,
+.re-outer,
+.ze-outer,
+.info-outer {
   display: block;
     position: relative;
     /* height: 100vh; */
@@ -164,6 +206,10 @@ body{
     overflow-x: hidden;
     background-color: #f3f3f3;
     z-index: 1;
+}
+.h-outer{
+    width: 100vw;
+    padding:0px 40px;
 }
 .vid-over {
     position: absolute;
@@ -221,7 +267,11 @@ body{
 .pmc-banner,
 .po-banner,
 .ym-banner,
-.z-banner {
+.z-banner,
+.sc-banner,
+.re-banner,
+.ze-banner,
+.info-banner {
     text-align: center;
     display: block;
     width: 100%;
@@ -262,6 +312,23 @@ body{
     background: url(../images/zeo-back.jpg) top right no-repeat fixed;
     background-size: cover
 }
+.sc-banner {
+    background: url(../images/s-cover.jpg) top right no-repeat fixed;
+    background-size: cover
+}
+.re-banner {
+    background: url(../images/re-cover.jpg) top right no-repeat fixed;
+    background-size: cover
+}
+.ze-banner {
+    background: url(../images/ze-cover.jpg) top right no-repeat fixed;
+    background-size: cover
+}
+
+.info-banner {
+    background: url(../images/info-cover.jpg) top right no-repeat fixed;
+    background-size: cover
+}
 .ec-over,
 .f-over,
 .g-over,
@@ -270,7 +337,11 @@ body{
 .pmc-over,
 .po-over,
 .ym-over,
-.z-over {
+.z-over,
+.sc-over,
+.re-over,
+.ze-over,
+.info-over {
     display: block;
     background-color: #263B4A;
     opacity: .9;
@@ -287,6 +358,9 @@ body{
 .ym-over {
     background-color: #584779
 }
+.sc-over {
+    background-color: #252525;
+}
 .ki-over {
     background-color: #000
 }
@@ -301,6 +375,15 @@ body{
 }
 .po-over {
     background-color: #dc2c2c
+}
+.re-over {
+    background-color: #79721D;
+}
+.ze-over {
+    background-color: #3B3B3B;
+}
+.info-over{
+    background: #2d2251;
 }
 .fo-logo {
     display: block;
@@ -412,7 +495,11 @@ body{
 .pmc-top,
 .po-top,
 .ym-top,
-.z-top {
+.z-top,
+.sc-top,
+.re-top,
+.ze-top,
+.info-top {
     position: fixed;
     bottom: 10px;
     right: 20px;
@@ -458,7 +545,12 @@ body{
 .msg-top {
     background: #d48120
 }
-,
+.re-top {
+    background: #252525
+}
+.info-top {
+    background: #2d2251;
+}
 .ec-top:hover,
 .f-top:hover,
 .g-top:hover,
@@ -480,7 +572,26 @@ body{
     color: #4d4d4d;
     font-size: 1.2em;
 }
+/*message up*/
 
+#message-box,
+.head {
+    text-align: left;
+    font-size: 2em;
+    margin-top: 40px;
+    /*margin: 3.2% 3.2% 3.2% 20px;*/
+}
+#message-box{
+    margin: 20px 0px;
+}
+a.left-a{
+    margin-left: 0px;
+    padding-bottom: 20px;
+}
+/*.loader{
+    position: absolute;
+    z-index: 1000;
+}*/
 @media(max-width: 640px){
     .pro-slider .head1{
         padding:10px 20px;
